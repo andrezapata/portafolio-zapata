@@ -1,0 +1,68 @@
+.habilidades-section { position: relative; overflow: hidden; }
+
+.habilidades-glow {
+  width: 600px; height: 400px;
+  top: 0; right: -200px;
+  background: radial-gradient(circle, rgba(0,200,255,0.06) 0%, transparent 65%);
+}
+
+/* Tarjeta habilidades */
+.hab-card { display: flex; flex-direction: column; }
+
+.hab-card-icon {
+  width: 52px; height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-glow);
+  border: 1px solid rgba(0,200,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.hab-card-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.hab-skills { display: flex; flex-direction: column; gap: 14px; }
+
+.hab-skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.hab-skill-name {
+  font-size: 0.82rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.hab-skill-pct {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.hab-bar {
+  height: 5px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.hab-bar-fill {
+  height: 100%;
+  border-radius: 100px;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 8px currentColor;
+}

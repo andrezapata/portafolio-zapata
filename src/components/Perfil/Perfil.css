@@ -1,0 +1,110 @@
+.perfil-section { position: relative; overflow: hidden; }
+
+.perfil-glow {
+  width: 500px; height: 500px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0,119,255,0.06) 0%, transparent 65%);
+}
+
+/* Stats */
+.perfil-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 800;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Timeline */
+.perfil-timeline-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-accent), var(--color-accent-2), transparent);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -24px;
+  top: 20px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-dot-inner {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.timeline-content { position: relative; }
+
+.timeline-year {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.timeline-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 6px;
+}
+
+.timeline-desc {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+  margin: 0;
+}

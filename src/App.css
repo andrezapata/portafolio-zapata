@@ -1,0 +1,13 @@
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+section:nth-child(even) {
+  background: var(--color-bg-2);
+}
